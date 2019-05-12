@@ -104,8 +104,12 @@ function startNewRound(game) {
 }
 
 var myGame = setupGame(gameWords, 0, 0);
-
-window.onload = function() {}
+//appending object properties to the document
+document.getElementById("puzzle-state").append(myGame.round.puzzleState.join(" "));
+document.getElementById("wrong-guesses").append(myGame.round.wrongGuesses);  
+document.getElementById("guesses-left").append(myGame.round.guessesLeft);
+document.getElementById("win-counter").append(myGame.wins);
+document.getElementById("loss-counter").append(myGame.losses);
 
 document.onkeyup = function(event) {
     updateRound(myGame.round, event.key);
@@ -120,20 +124,7 @@ document.onkeyup = function(event) {
         document.getElementById("win-counter").textContent = myGame.wins;
         document.getElementById("loss-counter").textContent = myGame.losses;
         document.getElementById("puzzle-state").textContent = myGame.round.puzzleState.join(" ");
+        document.getElementById("wrong-guesses").textContent = myGame.round.wrongGuesses;
+        document.getElementById("guesses-left").textContent = myGame.round.guessesLeft;
     }
 }
-//appending object properties to the document
-document.getElementById("puzzle-state").append(myGame.round.puzzleState.join(" "));
-document.getElementById("wrong-guesses").append(myGame.round.wrongGuesses);  
-document.getElementById("guesses-left").append(myGame.round.guessesLeft);
-document.getElementById("win-counter").append(myGame.wins);
-document.getElementById("loss-counter").append(myGame.losses);
-
-
-//document.getElementById("puzzle-state").addEventListener("change")
-
-
-// //call function to see if guess was correct
-// isCorrectGuess(wordAnswer, letterGuess);
-
-// //call function to 

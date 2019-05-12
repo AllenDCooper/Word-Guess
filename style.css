@@ -1,0 +1,16 @@
+body {
+    background-image: url("typewriter2.png");
+}
+body, h1, h2, h3 {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-weight: bold;
+    font-size: 42px; 
+}
+h3 {
+    font-size: 18px;
+}
+
+h2, div {
+    clear: both;
+}
