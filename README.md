@@ -1,6 +1,8 @@
-# Word Guess Game (Browser)
+# Word Guess Game
 
 Created a working word-guess game where the user can guess the names of randomly generated NYC writers. 
+
+[https://allendcooper.github.io/Word-Guess/](https://allendcooper.github.io/Word-Guess/)
 
 ## Overview
 

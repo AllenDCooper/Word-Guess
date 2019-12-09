@@ -104,6 +104,7 @@ function startNewRound(game) {
 }
 
 var myGame = setupGame(gameWords, 0, 0);
+
 //appending object properties to the document
 document.getElementById("puzzle-state").append(myGame.round.puzzleState.join(" "));
 document.getElementById("wrong-guesses").append(myGame.round.wrongGuesses);  
